@@ -1,0 +1,48 @@
+.menuitem {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  width: 120px;
+  text-align: center;
+
+  font-weight: 400;
+  color: #42494f;
+
+  font-family: "Euclid Circular A", sans-serif;
+}
+
+.menuitem:hover {
+  color: #00684a;
+  text-shadow: 0 0 1px rgba(0, 104, 74, 0.5);
+}
+
+.cusIcon {
+  margin-left: 5px;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.menuButton:hover {
+  color: #00684a;
+  text-shadow: 0 0 1px rgba(0, 104, 74, 0.5);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .menuitem {
+    width: 100%;
+    text-align: center;
+    color: #42494f;
+
+    padding: 10px 0;
+    font-family: Euclid Circular A;
+  }
+}
