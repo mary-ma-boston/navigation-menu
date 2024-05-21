@@ -18,10 +18,15 @@ const NavigationMenu: React.FC = () => {
 
   return (
     <>
-      <div className={styles.hamburger} onClick={toggleMenu}>
+      <div
+        className={styles.hamburger}
+        onClick={toggleMenu}
+        aria-expanded={menuActive}
+        aria-controls="main-menu"
+      >
         &#9776; {/* Unicode character for the hamburger icon */}
       </div>
-      <nav className={menuActive ? styles.menuActive : ""}>
+      <nav id="main-menu" className={menuActive ? styles.menuActive : ""}>
         <NavLink to="/" className={styles.navlink}>
           <MenuItem title="Home" />
         </NavLink>

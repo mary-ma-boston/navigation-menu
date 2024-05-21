@@ -59,7 +59,12 @@ const MenuItem: React.FC<MenuItemProps> = ({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <button className={styles.menuButton} onKeyDown={handleKeyDown}>
+      <button
+        className={styles.menuButton}
+        onKeyDown={handleKeyDown}
+        aria-haspopup={hasSubmenu ? "true" : undefined}
+        aria-expanded={showSubmenu}
+      >
         {title}
         {hasSubmenu && (
           <FontAwesomeIcon icon={faChevronDown} className={styles.cusIcon} />
