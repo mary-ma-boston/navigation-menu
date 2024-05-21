@@ -1,6 +1,17 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deployed Application: https://navigation-menu-two.vercel.app/
+Bonus Points:
+1. Clean and Visually Appealing Design: The navigation menu has a modern and aesthetically pleasing design, ensuring it looks great on any device.
+2. Smooth Transition Effects: I have implemented smooth transition effects for the submenus, providing a polished animation for displaying and hiding them.
+3. Responsive Design: The menu is fully responsive, adapting seamlessly to different screen sizes. When the screen size is less than 768px, the menu will become a hamburger icon. 
+4. Icon Decoration: I have used React font awesome icons to enhance the visual appeal of the menu items, making the interface more engaging.
+5. Optimized Interaction: The interaction behaviors have been fine-tuned to respond smoothly to the user's mouse movements, providing an intuitive and user-friendly experience.
+6. Additional Features: To showcase my creativity and technical skills, I have added some unique features, such as keyboard navigation, adding an onKeyDown handler to toggle the submenu with the Enter or Space keys, and close it with the Escape key.
+7. Used React-router-dom to enhance the accessibility and correctness of the navigation menu.
+8. Improving accessibility (a11y) by using ARIA Attributes in the navigation menu and submenu involves making sure the components are usable by people with disabilities, including those who rely on keyboard navigation and screen readers. 
+
 
 ## Available Scripts
 
