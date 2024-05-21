@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { NavLink, Link, Routes, Route } from "react-router-dom";
 import productsData from "../../utils/productsData";
 import MenuItem from "../MenuItem/MenuItem";
@@ -8,9 +9,19 @@ import Product4 from "../Products/Product4";
 import styles from "./NavigationMenu.module.css";
 
 const NavigationMenu: React.FC = () => {
+  /* control hamburger menu  */
+  const [menuActive, setMenuActive] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
     <>
-      <nav>
+      <div className={styles.hamburger} onClick={toggleMenu}>
+        &#9776; {/* Unicode character for the hamburger icon */}
+      </div>
+      <nav className={menuActive ? styles.menuActive : ""}>
         <NavLink to="/" className={styles.navlink}>
           <MenuItem title="Home" />
         </NavLink>

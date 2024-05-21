@@ -52,14 +52,18 @@ ul {
   color: #42494f;
 }
 
-
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column; /* Change to vertical layout on smaller screens */
-    color: #fff; /* White text color */
-  }
+  /* nav {
+    flex-direction: column; 
+    color: #fff;
+  } */
 
   .submenu {
     position: static;
@@ -74,5 +78,17 @@ ul {
     font-size: 15px;
     padding: 5px;
     font-family: "Euclid Circular A", sans-serif;
+  }
+
+  nav {
+    display: none; /* Hide the regular menu */
+  }
+
+  .hamburger {
+    display: block; /* Show the hamburger icon */
+  }
+
+  .menuActive {
+    display: block; /* Show the menu when active */
   }
 }

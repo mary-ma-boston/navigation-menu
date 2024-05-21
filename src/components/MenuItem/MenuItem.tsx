@@ -15,9 +15,8 @@ const MenuItem: React.FC<MenuItemProps> = ({
   hasSubmenu = false,
   children,
 }) => {
-  /* Optimize user's mouse movement trajectory */
   const [showSubmenu, setShowSubmenu] = useState(false);
-  // const submenuRef = useRef<HTMLDivElement>(null);
+  /* Optimize user's mouse movement trajectory */
   const submenuTimer = useRef<number | null>(null);
 
   const handleMouseEnter = () => {
